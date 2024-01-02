@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Network Cache Monitoring Information System</title>
+    <meta name="description" content="page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/while_lxy.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Xuanyu Lu</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+<!--    <section class="project-cs-hero">-->
+<!--      <div class="project-cs-hero__content">-->
+<!--        <h1 class="heading-primary">Project 1</h1>-->
+<!--        <div class="project-cs-hero__info">-->
+<!--          <p class="text-primary">-->
+<!--            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos-->
+<!--            in numquam incidunt earum quaerat cum fuga, atque similique natus-->
+<!--            nobis sit.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="project-cs-hero__cta">-->
+<!--          <a href="#" class="btn btn&#45;&#45;bg" target="_blank">Live Link</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/single_universal.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+            <img
+              src="./assets/png/stu.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                Automated tiny lesion detection shows promise in improving this situation and is
+                indispensable in clinical workflows nowadays. It involves the use of algorithms and
+                models to accurately and efficiently detect lesions in medical images, enabling early
+                identification of potential cancer risks. In recent years, the remarkable achievements of
+                deep learning (DL) have contributed to the growing interest in this field within medical
+                imaging. Traditional knowledge-based algorithms have gradually been replaced by DL
+                models due to their powerful ability for recognizing and localizing complex patterns
+                and extracting higher-level feature representations.
+              </p>
+              <p class="project-details__desc-para">
+                Lesions closely related to high-risk cancers, such as lung nodules, breast masses,
+                etc, receive primary attention. Numerous single lesion detection (SLD) models have
+                been proposed. These models focus on specific categories of lesions and are capable of
+                providing highly sensitive detection for target lesions.
+                However, SLD alone is insufficient to provide comprehensive clinical support. In
+                clinical practice, it is commonly observed that patients have multiple lesions, and
+                these lesions are often interrelated[2]. Detecting all of them can support doctors in
+                integrating diverse lesion characteristics and information, enabling them to generate
+                more comprehensive and accurate diagnoses, as well as formulate personalized treatment
+                plans. Furthermore, compared to using an unknown number of SLD models
+                to detect any potentially existing lesions, detecting all lesions in one-shot is clearly
+                more efficient and better aligned with clinical workflow. Therefore, the universal lesion
+                detection (ULD) holds significant clinical value as it enables the detection of multiple
+                lesions throughout the body using a single model, making it a prominent and rapidly
+                evolving field.
+              </p>
+              <p class="project-details__desc-para">
+                In this paper, we review lesion detection from single to universal using medical
+                imaging. Specifically, we overview and discuss the recent advancements in four popular
+                SLD tasks: lung nodules, breast masses, thyroid nodules and diseased lymph
+                nodes detection. Additionally, the ULD task is included. Various imaging modalities,
+                including computed tomography (CT), X-ray, magnetic resonance imaging (MRI), and
+                ultrasound, are considered. For each task, our main focus lies in analyzing the innovations
+                of the representative studies and clarifying their relationship, as well as the
+                performance comparison. We also introduce the datasets, data modalities, and data
+                dimensions used in each study. Furthermore, drawing upon our experience of artificial
+                intelligent (AI) in medical imaging, we provide an in-depth discussion and analysis
+                of lesion detection area, along with possible improvements for current challenges and
+                future directions. We hope this paper could offer readers a better understanding and
+                minor inspiration on both medical and technical aspects of tiny lesion detection.
+                Please note that the term “detection” mentioned in this paper refers to the task
+                of object detection in the field of computer vision.
+              </p>
+              <p class="project-details__desc-para">
+                Please note that the term “detection” mentioned in this paper refers to the task
+                of object detection in the field of computer vision.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="baseline comparisons tools">
+                <div class="skills__skill">Pytorch</div>
+                <div class="skills__skill">Titan XP</div>
+                <div class="skills__skill">4090</div>
+              </div>
+            </div>
+<!--            <div class="project-details__links">-->
+<!--              <h3 class="project-details__content-title">See Live</h3>-->
+<!--              <a-->
+<!--                href="#"-->
+<!--                class="btn btn&#45;&#45;med btn&#45;&#45;theme project-details__links-btn"-->
+<!--                target="_blank"-->
+<!--                >Live Link</a-->
+<!--              >-->
+<!--              <a-->
+<!--                href="#"-->
+<!--                class="btn btn&#45;&#45;med btn&#45;&#45;theme-inv project-details__links-btn"-->
+<!--                target="_blank"-->
+<!--                >Code Link</a-->
+<!--              >-->
+<!--            </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+<!--            <h2 class="heading heading-sm main-footer__heading-sm">-->
+<!--              <span>Social</span>-->
+<!--            </h2>-->
+<!--            <div class="main-footer__social-cont">-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/linkedin-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/github-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/twitter-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/yt-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon main-footer__icon&#45;&#45;mr-none"-->
+<!--                  src="./assets/png/insta-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--            </div>-->
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Xuanyu Lu</h4>
+            <p class="main-footer__short-desc">
+              Vivere est cogitare
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Made by
+          <a
+            >Lily</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

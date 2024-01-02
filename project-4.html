@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>learning experience</title>
+    <meta name="description" content="page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/while_lxy.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Xuanyu Lu</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+<!--    <section class="project-cs-hero">-->
+<!--      <div class="project-cs-hero__content">-->
+<!--        <h1 class="heading-primary">Project 1</h1>-->
+<!--        <div class="project-cs-hero__info">-->
+<!--          <p class="text-primary">-->
+<!--            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos-->
+<!--            in numquam incidunt earum quaerat cum fuga, atque similique natus-->
+<!--            nobis sit.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="project-cs-hero__cta">-->
+<!--          <a href="#" class="btn btn&#45;&#45;bg" target="_blank">Live Link</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/png/eye-track-PIP.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                The section discusses regression tasks in the context of machine learning, particularly
+                focusing on two types of regression: coordinate regression and heatmap regression.
+
+                Additionally, the text refers to the use of a two-stage cascade for facial keypoint detection, which can be further extended like DCNN or Face++ methodologies. These involve predicting different parts of the face separately or dividing the keypoints into two regions for separate prediction. The author suggests these as valuable ideas worth exploring further, hoping that others might improve upon them using MobileNet-V2.
+
+              </p>
+              <p class="project-details__desc-para">
+                Coordinate Regression
+                Advantages: Fast training and forward speeds, end-to-end full differential training.
+                Disadvantages: Lacks spatial generalization ability.
+                Explanation: Spatial generalization refers to the ability of a model to apply knowledge gained at one location during training to another location during inference. For instance, if a ball is always in the top left corner of the image during training, but in the bottom right corner during testing, the ability of the network to detect or recognize it signifies spatial generalization. Fully convolutional models possess this ability due to weight sharing. However, as the 2014 Network in Network paper pointed out, using fully connected layers to output coordinates greatly impairs spatial generalization.
+
+              </p>
+              <p class="project-details__desc-para">
+                Heatmap Regression
+                Method: Typically involves generating a Gaussian heatmap at keypoint locations, creating a 2D Gaussian distribution centered at these points. This Gaussian distribution is then overlaid onto the corresponding location on the image to produce the final heatmap. A suitable size is chosen for the Gaussian kernel, which is then convolved with the original heatmap to smooth it.
+                Advantages: High precision, improved spatial generalization ability.
+                Disadvantages: Large output size leads to higher memory usage and slower inference and training speeds; theoretical lower bound of error; mse_loss might cause bias in learned results; not a fully differential model.
+                Issue: Theoretical lower bound of error arises from the resizing process. For instance, if a keypoint at 507x507 in a 512x512 image is downscaled by a factor of 4, even an error-free Gaussian heatmap restoration would result in a maximum error of 3 pixels.
+                The text also discusses the concept of using a regression task for keypoint detection, given that it's not feasible to train on every possible image position. It mentions PIPnet, which adopts ideas from the Yolo series, splitting the center point coordinates into two parts – identifying a broad area first and then refining to the offset. This approach effectively addresses the theoretical error lower bound issue.
+              </p>
+              <p class="project-details__desc-para">
+                Additionally, the text refers to the use of a two-stage cascade for facial keypoint detection, which can be further extended like DCNN or Face++ methodologies. These involve predicting different parts of the face separately or dividing the keypoints into two regions for separate prediction. The author suggests these as valuable ideas worth exploring further, hoping that others might improve upon them using MobileNet-V2.
+              </p>
+              <img
+              src="./assets/png/eye-tracker-essay1.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+              <img
+              src="./assets/png/eye-tracker-essay2.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+            </div>
+<!--            <div class="project-details__tools-used">-->
+<!--              <h3 class="project-details__content-title">Tools Used</h3>-->
+<!--              <div class="baseline comparisons tools">-->
+<!--                <div class="skills__skill">Pytorch</div>-->
+<!--                <div class="skills__skill">Kubernetes</div>-->
+<!--                <div class="skills__skill">RESTful APIs</div>-->
+<!--                <div class="skills__skill">AWS</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="project-details__links">-->
+<!--              <h3 class="project-details__content-title">See Live</h3>-->
+<!--              <a-->
+<!--                href="#"-->
+<!--                class="btn btn&#45;&#45;med btn&#45;&#45;theme project-details__links-btn"-->
+<!--                target="_blank"-->
+<!--                >Live Link</a-->
+<!--              >-->
+<!--              <a-->
+<!--                href="#"-->
+<!--                class="btn btn&#45;&#45;med btn&#45;&#45;theme-inv project-details__links-btn"-->
+<!--                target="_blank"-->
+<!--                >Code Link</a-->
+<!--              >-->
+<!--            </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+<!--            <h2 class="heading heading-sm main-footer__heading-sm">-->
+<!--              <span>Social</span>-->
+<!--            </h2>-->
+<!--            <div class="main-footer__social-cont">-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/linkedin-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/github-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/twitter-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon"-->
+<!--                  src="./assets/png/yt-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--              <a target="_blank" rel="noreferrer" href="#">-->
+<!--                <img-->
+<!--                  class="main-footer__icon main-footer__icon&#45;&#45;mr-none"-->
+<!--                  src="./assets/png/insta-ico.png"-->
+<!--                  alt="icon"-->
+<!--                />-->
+<!--              </a>-->
+<!--            </div>-->
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Xuanyu Lu</h4>
+            <p class="main-footer__short-desc">
+              Vivere est cogitare
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Made by
+          <a
+            >Lily</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
